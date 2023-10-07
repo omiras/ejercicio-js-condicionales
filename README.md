@@ -4,7 +4,7 @@
 
 Ejecuta cada fichero con el comando **node ex1.js**
 
-## Ejercicio Live Server 
+## Ejercicio Live Server
 
 En este ejercicio nos piden implementar una lógica condicional.
 En función de unas variables iniciales, tenemos que establecer el valor de otras.

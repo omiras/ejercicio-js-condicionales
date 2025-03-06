@@ -5,6 +5,7 @@
 
 let numero = -1; /** Solamente puedes modificar esta línea */
 
+/** ¡PROHIBIDO MODIFICAR A PARTIR DE AQUÍ! */
 if (numero <= 0) {
   console.log("BUP!BUP!");
 }

@@ -1,5 +1,5 @@
 /*
-¿Que va a mostrar por el terminal cuando hagamos node ex1.js? ¿Por qué?
+¿Que va a mostrar por el terminal cuando ejecutemos node ex1.js? ¿Por qué?
 */
 
 if (1 < 2) {

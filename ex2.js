@@ -1,5 +1,5 @@
 /*
-¿Que va a mostrar por el terminal cuando hagamos node ex2.js? ¿Por qué?
+¿Que va a mostrar por el terminal cuando ejecutemos node ex2.js? ¿Por qué?
 */
 
 let numero = 3;

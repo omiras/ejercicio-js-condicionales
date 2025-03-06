@@ -1,5 +1,5 @@
 /*
-1. Escribe un valor adecuado para la variable 'usuario' y/o 'password' para que se muestre por consola el mensaje "Credenciales correctas, bievenido usuario pepe@gmail.com".
+1. Escribe un valor adecuado para la variable 'usuario' y/o 'password' para que se muestre por consola el mensaje "Credenciales correctas, bievenido usuario pepa@gmail.com".
 */
 
 let usuario = "pepe@gmail.com"; // MODIFICAR

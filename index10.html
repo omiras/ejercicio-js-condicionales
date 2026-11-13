@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,14 +27,9 @@
       };
     </script>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
 
-    <title>Frontend Mentor | Single Price Grid Component</title>
+
+    <title>Ejercicio 10 - Condicionales JavaScript</title>
     <style>
       body {
         font-family: "Karla", sans-serif;
@@ -42,8 +37,21 @@
     </style>
   </head>
 
-  <body class="h-screen flex items-center justify-center bg-lightGrey">
-    <div class="flex flex-col max-w-[300px] sm:max-w-xl rounded">
+  <body class="min-h-screen flex items-center justify-center bg-lightGrey">
+    <main class="p-4">
+      <h1 class="text-xl font-bold mb-3">Ejercicio 10 - Condicionales JavaScript</h1>
+      <p class="mb-3">Abre esta página con Live Server. Sigue los comentarios del último &lt;script&gt; y guarda para ver los cambios.</p>
+      <details class="mb-4">
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <ol class="list-decimal pl-6">
+          <li>El precio pasa a 59.</li>
+          <li>El precio aparece rojo si es mayor de 50; azul en caso contrario.</li>
+          <li>Why Us se acorta usando substring y termina en puntos suspensivos.</li>
+          <li>Al cambiar el precio a 10 antes del condicional, aparece azul.</li>
+          <li>Al sustituir el texto original por el de los estudiantes, el recorte se aplica al nuevo texto.</li>
+        </ol>
+      </details>
+      <div class="flex flex-col max-w-[300px] sm:max-w-xl rounded">
       <div class="bg-white p-4 sm:p-8 space-y-3">
         <p class="text-cyan font-bold">Join our community</p>
         <p class="text-yellow font-bold">
@@ -82,6 +90,7 @@
         </div>
       </div>
     </div>
+    </main>
     <script>
       // ESTO NO SE PUEDE TOCAR!! Pensad que de alguna manera viene del servidor, y estas variables no las podemos tocar en este punto.
 
@@ -91,15 +100,15 @@
         "Tutorials by industry experts Peer & expert code review Coding exercises Access to our GitHub repos Community forum Flashcard decks New videos every week";
       //---------------------------------------
 
-      // Codificar a partir de aquí. Para cada ejercicio, solo necesitas UNA insturcción JAvaScript
+      // Codificar a partir de aquí. Sigue las instrucciones de cada apartado
 
       // Ejercicio 1. Sobreescribe el valor de la variable precio a 59. Verifica que el precio se cambia en el HTML renderizado por el Live Server
 
       // Ejercicio 2. Escribe un condicional if..else que compruebe lo siguiente. Si el precio del producto es mayor de 50 euros, debemos asignar a la variable claseCSS el valor "text-red-500". En caso contrario, debemos asignar el valor "text-blue-500".
 
-      // Ejercicio 3. Nos han comentado que el texto del "whyUs" es demasiado largo. Demasiado bla bla. Actualiza la varible 'whyUs'. Queremos que quede algo como así: "Tutorials by industry experts Peer & expert code review ...". Nos han comentado que es olbigatorio que usemos el método substring para conseguir esto https://www.w3schools.com/jsref/jsref_substring.asp ; ya que el texto de whyUs puede cambiar en el futuro.
+      // Ejercicio 3. Nos han comentado que el texto del "whyUs" es demasiado largo. Demasiado bla bla. Actualiza la variable 'whyUs'. Queremos que quede algo como así: "Tutorials by industry experts Peer & expert code review ...". Nos han comentado que es obligatorio que usemos el método substring para conseguir esto https://www.w3schools.com/jsref/jsref_substring.asp ; ya que el texto de whyUs puede cambiar en el futuro.
 
-      // Ejercicio 4. Vuelve a la instrucción que has usado en  el ejercicio 1. En ese mismo punto del código, sobreescribe la variable precio a 10 . ¿Cambia el color del precop ahora? ¿Por qué? Atención: https://oscarm.tinytake.com/media/1737711?filename=1741291911314_TinyTake06-03-2025-09-10-09_638768887098446509.png&sub_type=thumbnail_preview&type=attachment&width=1199&height=461
+      // Ejercicio 4. Vuelve a la instrucción que has usado en  el ejercicio 1. En ese mismo punto del código, sobreescribe la variable precio a 10 . ¿Cambia el color del precio ahora? ¿Por qué? Atención: https://oscarm.tinytake.com/media/1737711?filename=1741291911314_TinyTake06-03-2025-09-10-09_638768887098446509.png&sub_type=thumbnail_preview&type=attachment&width=1199&height=461
 
       // Ejercicio 5. En el mismo punto del Ejercicio 1, cambia la variable whyUs a este valor : "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa."
 

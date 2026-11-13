@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Condicionales JavaScript</title>
+  </head>
+  <body>
+    <h1>Ejercicio 3 - Condicionales JavaScript</h1>
+    <p>Abre este archivo con Live Server y abre la consola del navegador (F12 → Consola).</p>
+    <ol>
+      <li>Comprueba que no se muestra ning&#250;n mensaje en la consola al abrir esta p&#225;gina.</li>
+      <li>Asigna un valor a la variable numero para que se muestren TODOS los console.log del c&#243;digo. Actualmente tiene el valor 0.</li>
+      <li>BONUS: &#191;Cu&#225;l es el valor m&#237;nimo entero que resuelve este ejercicio?</li>
+    </ol>
+    
+    <p>Edita el código dentro de la etiqueta &lt;script&gt;, guarda y consulta la consola.</p>
+    <details>
+      <summary>Resultado esperado (pulsa para verlo)</summary>
+      <pre>Inicialmente no aparece ning&#250;n mensaje.
+Tras el cambio:
+El n&#250;mero es mayor de 0.
+El n&#250;mero es mayor de 100.
+El n&#250;mero es mayor de 500.
+BONUS: el menor entero que lo consigue es 501.</pre>
+    </details>
+    <script>
+      /*
+      1. Comprueba que no se muestra nada por la consola del navegador cuando ejecutamos "abrir index3.html con Live Server"
+      2. Asigna un valor a la variable "numero" para que se muestren por la consola del navegador TODOS los console.log del código. Actualmente, estamos asignando un 0.
+      3. BONUS: ¿Cual es el valor mínimo entero que resuelve este ejercicio?
+      */
+
+      let numero = 0;
+
+      if (numero > 0) {
+        console.log("El número es mayor de 0.");
+      }
+
+      if (numero > 100) {
+        console.log("El número es mayor de 100.");
+      }
+
+      if (numero > 500) {
+        console.log("El número es mayor o igual que 500.");
+      }
+    </script>
+  </body>
+</html>

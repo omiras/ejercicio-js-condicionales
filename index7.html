@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Condicionales JavaScript</title>
+  </head>
+  <body>
+    <h1>Ejercicio 7 - Condicionales JavaScript</h1>
+    <p>Abre este archivo con Live Server y abre la consola del navegador (F12 → Consola).</p>
+    <ol>
+      <li>Modifica usuario y password para mostrar &#171;Credenciales correctas, bienvenido usuario pepa@gmail.com&#187;.</li>
+    </ol>
+    
+    <p>Edita el código dentro de la etiqueta &lt;script&gt;, guarda y consulta la consola.</p>
+    <details>
+      <summary>Resultado esperado (pulsa para verlo)</summary>
+      <pre>Credenciales correctas, bienvenido usuario pepa@gmail.com</pre>
+    </details>
+    <script>
+      /*
+      1. Escribe un valor adecuado para la variable 'usuario' y/o 'password' para que se muestre por consola el mensaje "Credenciales correctas, bienvenido usuario pepa@gmail.com".
+      */
+
+      let usuario = "pepe@gmail.com"; // MODIFICAR
+      let password = "1996"; // MODIFICAR
+
+      /** NO TOCAR A PARTIR DE AQUÍ  */
+      if (usuario == "pepa@gmail.com" && password == "1995") {
+        console.log("Credenciales correctas, bienvenido usuario " + usuario);
+      }
+    </script>
+  </body>
+</html>

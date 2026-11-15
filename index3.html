@@ -3,27 +3,150 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3 - Condicionales JavaScript</title>
+    <title>Ejercicio 3 - Entender un if</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #f5f6f8;
+        color: #243042;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 32px 20px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.8rem;
+        line-height: 1.3;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.2rem;
+      }
+
+      header p {
+        margin: 0 0 24px;
+        color: #526077;
+      }
+
+      section,
+      details {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #dce1e8;
+        border-radius: 8px;
+        background-color: #ffffff;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      section > :last-child {
+        margin-bottom: 0;
+      }
+
+      code,
+      pre {
+        font-family: Consolas, monospace;
+      }
+
+      code {
+        padding: 2px 5px;
+        border-radius: 4px;
+        background-color: #eef1f5;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: #eef1f5;
+        line-height: 1.5;
+      }
+
+      pre code {
+        padding: 0;
+        background-color: transparent;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      ol {
+        padding-left: 24px;
+      }
+
+      .idea {
+        padding: 12px 16px;
+        border-left: 3px solid #4266a4;
+        background-color: #f0f4fa;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      details pre {
+        white-space: pre-wrap;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ejercicio 3 - Condicionales JavaScript</h1>
-    <p>Abre este archivo con Live Server y abre la consola del navegador (F12 → Consola).</p>
-    <ol>
-      <li>Comprueba que no se muestra ning&#250;n mensaje en la consola al abrir esta p&#225;gina.</li>
-      <li>Asigna un valor a la variable numero para que se muestren TODOS los console.log del c&#243;digo. Actualmente tiene el valor 0.</li>
-      <li>BONUS: &#191;Cu&#225;l es el valor m&#237;nimo entero que resuelve este ejercicio?</li>
-    </ol>
-    
-    <p>Edita el código dentro de la etiqueta &lt;script&gt;, guarda y consulta la consola.</p>
-    <details>
-      <summary>Resultado esperado (pulsa para verlo)</summary>
-      <pre>Inicialmente no aparece ning&#250;n mensaje.
-Tras el cambio:
-El n&#250;mero es mayor de 0.
-El n&#250;mero es mayor de 100.
-El n&#250;mero es mayor de 500.
-BONUS: el menor entero que lo consigue es 501.</pre>
-    </details>
+    <main>
+      <header>
+        <h1>Ejercicio 3 · Entender un if</h1>
+        <p>Objetivo: decidir qué instrucciones se ejecutan según el valor de una variable.</p>
+      </header>
+
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Un <code>if</code> comprueba una condición. Si es verdadera, ejecuta las instrucciones entre llaves. Si es falsa, las salta y continúa con el resto del código.</p>
+        <pre><code>let temperatura = 28;
+
+if (temperatura > 25) {
+  console.log("Hace calor");
+}
+
+console.log("Fin de la comprobación");</code></pre>
+        <p>Como <code>28 > 25</code> es verdadero, aparecen los dos mensajes. Si la temperatura fuera <code>20</code>, solo aparecería «Fin de la comprobación».</p>
+        <p>El símbolo <code>&gt;</code> significa <strong>mayor que</strong>: si los dos valores son iguales, la condición es falsa.</p>
+        <p class="idea"><strong>En este ejercicio hay tres if independientes.</strong> Se comprueban uno tras otro: que se ejecute el primero no impide que también se ejecuten los siguientes.</p>
+      </section>
+
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <ol>
+          <li>Comprueba que con <code>numero = 0</code> no aparece ningún mensaje del ejercicio en la consola.</li>
+          <li>Antes de cambiar el código, piensa: ¿qué valor haría verdaderas las tres condiciones?</li>
+          <li>Asigna ese valor a <code>numero</code> para que se muestren <strong>todos los console.log</strong>. Modifica únicamente el valor de la variable.</li>
+          <li><strong>BONUS:</strong> ¿cuál es el menor número entero que lo consigue? Explica por qué.</li>
+        </ol>
+        <p>Edita el JavaScript dentro del <code>&lt;script&gt;</code> al final de este HTML. Al guardar, Live Server recargará la página: consulta los mensajes de la consola.</p>
+      </section>
+
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <p>Inicialmente no aparece ningún mensaje del ejercicio. Tras modificar la variable, deben aparecer estos tres:</p>
+        <pre>El número es mayor de 0.
+El número es mayor de 100.
+El número es mayor de 500.</pre>
+        <p><strong>BONUS:</strong> el menor entero es <code>501</code>. Con <code>500</code>, la condición <code>numero &gt; 500</code> todavía es falsa.</p>
+      </details>
+    </main>
     <script>
       /*
       1. Comprueba que no se muestra nada por la consola del navegador cuando ejecutamos "abrir index3.html con Live Server"
@@ -42,7 +165,7 @@ BONUS: el menor entero que lo consigue es 501.</pre>
       }
 
       if (numero > 500) {
-        console.log("El número es mayor o igual que 500.");
+        console.log("El número es mayor de 500.");
       }
     </script>
   </body>

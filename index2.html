@@ -3,20 +3,141 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2 - Condicionales JavaScript</title>
+    <title>Ejercicio 2 - Comparar una variable</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #f5f6f8;
+        color: #243042;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 32px 20px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.8rem;
+        line-height: 1.3;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.2rem;
+      }
+
+      header p {
+        margin: 0 0 24px;
+        color: #526077;
+      }
+
+      section,
+      details {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #dce1e8;
+        border-radius: 8px;
+        background-color: #ffffff;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      section > :last-child {
+        margin-bottom: 0;
+      }
+
+      code,
+      pre {
+        font-family: Consolas, monospace;
+      }
+
+      code {
+        padding: 2px 5px;
+        border-radius: 4px;
+        background-color: #eef1f5;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: #eef1f5;
+        line-height: 1.5;
+      }
+
+      pre code {
+        padding: 0;
+        background-color: transparent;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      ol {
+        padding-left: 24px;
+      }
+
+      .idea {
+        padding: 12px 16px;
+        border-left: 3px solid #4266a4;
+        background-color: #f0f4fa;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      details pre {
+        white-space: pre-wrap;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ejercicio 2 - Condicionales JavaScript</h1>
-    <p>Abre este archivo con Live Server y abre la consola del navegador (F12 → Consola).</p>
-    <ol>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 2 · Comparar una variable</h1>
+        <p>Practica paso a paso con condiciones y variables.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Una condición puede comparar el valor de una variable. Al llegar al <code>if</code>, JavaScript utiliza el valor que tiene la variable en ese momento.</p>
+        <pre><code>let edad = 16;
+
+if (edad &lt; 12) {
+  console.log("Entrada infantil");
+} else {
+  console.log("Entrada general");
+}</code></pre>
+        <p>Se compara <code>16 &lt; 12</code>. Como es falso, se ejecuta el <code>else</code>.</p>
+        <p class="idea">El símbolo <code>&lt;</code> significa <strong>menor que</strong>. Si los dos valores son iguales, la condición también es falsa.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <ol>
       <li>Predice qu&#233; mensaje aparecer&#225; en la consola y explica por qu&#233;.</li>
     </ol>
-    
-    <p>Edita el código dentro de la etiqueta &lt;script&gt;, guarda y consulta la consola.</p>
-    <details>
+        <p>Lee primero el código en el editor e intenta predecir el resultado antes de consultar la consola o desplegar la respuesta.</p>
+      </section>
+      <details>
       <summary>Resultado esperado (pulsa para verlo)</summary>
       <pre>Cuack!</pre>
     </details>
+
+
+    </main>
     <script>
       /*
       ¿Que va a mostrar por la consola del navegador cuando ejecutemos abrir index2.html con Live Server? ¿Por qué?

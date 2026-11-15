@@ -3,22 +3,145 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 4 - Condicionales JavaScript</title>
+    <title>Ejercicio 4 - Cumplir solo una condición</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #f5f6f8;
+        color: #243042;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 32px 20px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.8rem;
+        line-height: 1.3;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.2rem;
+      }
+
+      header p {
+        margin: 0 0 24px;
+        color: #526077;
+      }
+
+      section,
+      details {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #dce1e8;
+        border-radius: 8px;
+        background-color: #ffffff;
+      }
+
+      p {
+        margin: 0 0 12px;
+      }
+
+      section > :last-child {
+        margin-bottom: 0;
+      }
+
+      code,
+      pre {
+        font-family: Consolas, monospace;
+      }
+
+      code {
+        padding: 2px 5px;
+        border-radius: 4px;
+        background-color: #eef1f5;
+      }
+
+      pre {
+        overflow-x: auto;
+        padding: 16px;
+        border-radius: 6px;
+        background-color: #eef1f5;
+        line-height: 1.5;
+      }
+
+      pre code {
+        padding: 0;
+        background-color: transparent;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      ol {
+        padding-left: 24px;
+      }
+
+      .idea {
+        padding: 12px 16px;
+        border-left: 3px solid #4266a4;
+        background-color: #f0f4fa;
+      }
+
+      summary {
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      details pre {
+        white-space: pre-wrap;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ejercicio 4 - Condicionales JavaScript</h1>
-    <p>Abre este archivo con Live Server y abre la consola del navegador (F12 → Consola).</p>
-    <ol>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 4 · Cumplir solo una condición</h1>
+        <p>Practica paso a paso con condiciones y variables.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>El operador <code>&lt;=</code> significa <strong>menor o igual que</strong>. La condición se cumple tanto con un valor menor como con uno exactamente igual al límite.</p>
+        <pre><code>let edad = 12;
+
+if (edad &lt;= 16) {
+  console.log("Descuento joven");
+}
+
+if (edad &lt;= 10) {
+  console.log("Descuento infantil");
+}</code></pre>
+        <p>Con <code>12</code> se cumple la primera condición, pero no la segunda. Como son dos <code>if</code> independientes, se comprueban ambos.</p>
+        <p class="idea">Para obtener un solo mensaje, busca un valor que haga <strong>verdadera la primera condición y falsa la segunda</strong>.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Abre este archivo con <strong>Live Server</strong> y abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
+        <ol>
       <li>Comprueba cu&#225;ntos mensajes aparecen en la consola.</li>
       <li>Modifica &#250;nicamente numero para que solo aparezca BUP!BUP!</li>
     </ol>
-    
-    <p>Edita el código dentro de la etiqueta &lt;script&gt;, guarda y consulta la consola.</p>
-    <details>
+        <p>Edita el JavaScript dentro del <code>&lt;script&gt;</code> al final del HTML. Al guardar, Live Server recargará la página: consulta los mensajes de la consola.</p>
+      </section>
+      <details>
       <summary>Resultado esperado (pulsa para verlo)</summary>
       <pre>Inicialmente: BUP!BUP! y CROAK!!
 Tras el cambio: solo BUP!BUP!</pre>
     </details>
+
+
+    </main>
     <script>
       /**
        * 1. Ejecuta abrir index4.html con Live Server y comprueba cuantos mensajes se muestra por consola

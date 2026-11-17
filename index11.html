@@ -25,8 +25,8 @@ alert("Hola, " + nombre);</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>Como en el ejercicio 8, la palabra correcta de esta simulación es <code>sabio</code>. Ahora el usuario escribe su intento en una ventana.</p>
         <ol>
-          <li>Abre este HTML con <strong>Live Server</strong>. El código inicial contiene cuatro instrucciones activas y muestra los dos mensajes: todavía no comprueba el intento.</li>
-          <li>Conserva las dos variables. La segunda utiliza <code>prompt()</code> para pedir la palabra.</li>
+          <li>Abre este HTML con <strong>Live Server</strong>. En la versión inicial, las tres instrucciones que abren ventanas están comentadas para que puedas trabajar sin interrupciones.</li>
+          <li>Conserva las dos variables y descomenta la línea de <code>prompt()</code> cuando vayas a probar el ejercicio. Descomenta también cada <code>alert()</code> al colocarlo en su bloque.</li>
           <li>Compara <code>palabraUsuario != palabraCorrecta</code> con un <code>if...else</code>. Coloca cada <code>alert()</code> en el bloque adecuado.</li>
           <li>Prueba una palabra incorrecta y <code>sabio</code>. Escribe las palabras en minúsculas y sin espacios.</li>
         </ol>
@@ -41,11 +41,11 @@ alert("Hola, " + nombre);</code></pre>
       </details>
     </main>
     <script>
-      // Reorganiza estas cuatro instrucciones usando if...else. 
+      // Reorganiza estas cuatro instrucciones usando if...else.
       let palabraCorrecta = "sabio";
-      let palabraUsuario = prompt("Escribe la palabra del día:");
-      alert("No es la palabra del día. ¡Inténtalo de nuevo!");
-      alert("¡Correcto! Has acertado la palabra del día.");
+      // let palabraUsuario = prompt("Escribe la palabra del día:");
+      // alert("No es la palabra del día. ¡Inténtalo de nuevo!");
+      // alert("¡Correcto! Has acertado la palabra del día.");
     </script>
   </body>
 </html>

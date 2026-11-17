@@ -30,4 +30,4 @@ En el ejercicio 10, trabaja en la zona indicada del último script y comprueba l
 
 ## Ejercicio 11
 
-[index11.html](index11.html): reorganiza cuatro instrucciones con prompt(), alert() e if...else para comprobar una palabra secreta. Incluye una animacion GIF del resultado esperado.
+[index11.html](index11.html): reorganiza cuatro instrucciones con prompt(), alert() e if...else para comprobar una palabra secreta.

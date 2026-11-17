@@ -3,52 +3,60 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8 - Comprobar una diferencia</title>
+    <title>Ejercicio 8 - La palabra secreta del día</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <main class="lesson">
       <header>
-        <h1>Ejercicio 8 · Comprobar una diferencia</h1>
-        <p>Practica paso a paso con condiciones y variables.</p>
+        <h1>Ejercicio 8 · La palabra secreta del día</h1>
+        <p>Comprueba un intento usando el operador !=.</p>
       </header>
       <section aria-labelledby="teoria">
         <h2 id="teoria">Antes de empezar</h2>
-        <p>El operador <code>!=</code> significa <strong>distinto de</strong>. Al comparar textos, la condición es verdadera cuando los textos son diferentes.</p>
+        <p>El operador <code>!=</code> significa <strong>distinto de</strong>. Al comparar dos textos, la condición es verdadera si son diferentes.</p>
+        <p>También puedes comparar dos variables: se comparan los valores que contienen.</p>
         <pre><code>let color = "azul";
+let colorEsperado = "rojo";
 
-if (color != "rojo") {
-  console.log("El color no es rojo");
+if (color != colorEsperado) {
+  console.log("El color es diferente de rojo");
+} else {
+  console.log("El color es rojo");
 }</code></pre>
-        <p>Como «azul» es distinto de «rojo», aparece el mensaje. Si la variable valiera «rojo», no aparecería.</p>
-        <p class="idea">En este ejercicio se usa <code>!=</code> para comparar dos valores. No lo confundas con <code>!</code>, que niega una condición.</p>
+        <p>Como «azul» es distinto de «rojo», se ejecuta el primer bloque. Si ambos textos fueran iguales, se ejecutaría el <code>else</code>.</p>
+        <p class="idea"><strong>Con != comprobamos si hay un error.</strong> Si la condición es falsa, los textos coinciden. Las mayúsculas y los espacios también cuentan al comparar.</p>
       </section>
       <section aria-labelledby="practica">
         <h2 id="practica">Tu turno</h2>
+        <p><code>palabraCorrecta</code> guarda la solución del juego y <code>palabraUsuario</code> guarda el intento. Mantén la palabra correcta y cambia solo el intento.</p>
+        <p>Vamos a simular un intento en el juego <a href="https://www.lapalabradeldia.com" target="_blank" rel="noopener noreferrer">La palabra del día</a>. <strong>En este ejercicio</strong>, la palabra secreta es <code>sabio</code>.</p>
         <p>Abre este archivo con <strong>Live Server</strong> y abre la consola del navegador (<strong>F12 → Consola</strong>).</p>
         <ol>
-      <li>Modifica nombre para mostrar &#171;T&#250; NO eres Alex...&#187;.</li>
-    </ol>
-        <p>Edita el JavaScript dentro del <code>&lt;script&gt;</code> al final del HTML. Al guardar, Live Server recargará la página: consulta los mensajes de la consola.</p>
+          <li>La variable <code>palabraUsuario</code> representa la palabra que ha escrito el usuario. Ejecuta el código con el intento inicial <code>canto</code> y explica el mensaje.</li>
+          <li>Cambia únicamente el valor de <code>palabraUsuario</code> a <code>sabio</code> para acertar.</li>
+          <li>Prueba con <code>Sabio</code>. ¿Por qué no se considera un acierto?</li>
+        </ol>
+        <p>Edita el JavaScript dentro del <code>&lt;script&gt;</code> al final del HTML. Guarda y consulta los mensajes de la consola.</p>
       </section>
       <details>
-      <summary>Resultado esperado (pulsa para verlo)</summary>
-      <pre>T&#250; NO eres Alex...</pre>
-    </details>
-
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <pre>Con "canto": No es la palabra del día. ¡Inténtalo de nuevo!
+Con "sabio": ¡Correcto! Has acertado la palabra del día.
+Con "Sabio": No es la palabra del día. ¡Inténtalo de nuevo!</pre>
+      </details>
     </main>
     <script>
-      /**
-       * Operador !=
-       *
-       * 1. Modifica el valor de la variable "nombre" para que se muestre por consola el mensaje "Tú NO eres Alex..."
-       */
+      // En esta simulación, la palabra secreta del día es "sabio".
+      // Modifica únicamente palabraUsuario para probar diferentes intentos.
+      let palabraCorrecta = "sabio";
+      let palabraUsuario = "sabio";
 
-      let nombre = "Maria";
-
-      /**NO TOCAR A PARTIR DE AQUÍ */
-      if (nombre != "Alex") {
-        console.log("Tú NO eres Alex...");
+      // No modifiques el condicional: != detecta un intento incorrecto.
+      if (palabraUsuario != palabraCorrecta) {
+        console.log("No es la palabra del día. ¡Inténtalo de nuevo!");
+      } else {
+        console.log("¡Correcto! Has acertado la palabra del día.");
       }
     </script>
   </body>

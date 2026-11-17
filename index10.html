@@ -139,6 +139,19 @@ aviso = aviso.substring(0, 12) + "...";</code></pre>
 
       // Ejercicio 5. En el mismo punto del Ejercicio 1, cambia la variable whyUs a este valor : "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa."
 
+      // Estado final de los apartados 4 y 5.
+      // Para comprobar los apartados 1 y 2, cambia 10 por 59.
+      precio = 10;
+      whyUs = "Los estudiantes de programación web eran tan buenos que hasta el HTML se renderizaba con una sonrisa.";
+
+      if (precio > 50) {
+        claseCSS = "text-red-500";
+      } else {
+        claseCSS = "text-blue-500";
+      }
+
+      whyUs = whyUs.substring(0, 54) + "...";
+
       // NO MODIFICAR A PARTIR DE AQUí!!
 
       document.querySelector("#current-price").textContent = precio;

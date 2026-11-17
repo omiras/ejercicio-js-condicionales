@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Adivina la palabra del día</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 11 · Adivina la palabra del día</h1>
+        <p>Combina ventanas del navegador y un if...else.</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p><code>prompt()</code> pide un texto y devuelve lo que escribe el usuario. Si pulsa Cancelar, devuelve <code>null</code>.</p>
+        <p><code>alert()</code> muestra un mensaje y espera a que el usuario lo cierre.</p>
+        <pre><code>let nombre = prompt("¿Cómo te llamas?");
+
+alert("Hola, " + nombre);</code></pre>
+        <p class="idea"><strong>El orden importa.</strong> Primero pide la palabra; después usa un <code>if...else</code> con <code>!=</code> para mostrar un único mensaje.</p>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Como en el ejercicio 8, la palabra correcta de esta simulación es <code>sabio</code>. Ahora el usuario escribe su intento en una ventana.</p>
+        <ol>
+          <li>Abre este HTML con <strong>Live Server</strong>. El código inicial contiene cuatro instrucciones activas y muestra los dos mensajes: todavía no comprueba el intento.</li>
+          <li>Conserva las dos variables. La segunda utiliza <code>prompt()</code> para pedir la palabra.</li>
+          <li>Compara <code>palabraUsuario != palabraCorrecta</code> con un <code>if...else</code>. Coloca cada <code>alert()</code> en el bloque adecuado.</li>
+          <li>Prueba una palabra incorrecta y <code>sabio</code>. Escribe las palabras en minúsculas y sin espacios.</li>
+        </ol>
+        <p>Modifica el JavaScript al final del archivo. Si cancelas el <code>prompt()</code>, el intento se considera incorrecto porque <code>null</code> es distinto de <code>"sabio"</code>.</p>
+      </section>
+      <details>
+        <summary>Resultado esperado (pulsa para verlo)</summary>
+        <p>Con <code>sabio</code>: «¡Correcto! Has acertado la palabra del día.»</p>
+        <p>Con <code>canto</code>: «No es la palabra del día. ¡Inténtalo de nuevo!»</p>
+        <p>🎬 Animación ilustrativa del comportamiento esperado (el aspecto de las ventanas depende del navegador):</p>
+        <img src="resultado-index11.gif" alt="Demostración: escribir sabio muestra acierto; escribir canto muestra error." style="max-width: 100%; height: auto;">
+      </details>
+    </main>
+    <script>
+      // Reorganiza estas cuatro instrucciones usando if...else.
+      let palabraCorrecta = "sabio";
+      let palabraUsuario = prompt("Escribe la palabra del día:");
+      alert("No es la palabra del día. ¡Inténtalo de nuevo!");
+      alert("¡Correcto! Has acertado la palabra del día.");
+    </script>
+  </body>
+</html>
